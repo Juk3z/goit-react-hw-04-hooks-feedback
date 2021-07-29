@@ -12,15 +12,15 @@ function App() {
   const clickHandle = (evt) => {
     const stateName = evt.target.textContent;
     if (stateName === 'good') {
-      setGood(good + 1);
+      setGood(prev => prev + 1);
     };
 
     if (stateName === 'neutral') {
-      setNeutral(neutral + 1);
+      setNeutral(prev => prev + 1);
     };
 
     if (stateName === 'bad') {
-      setBad(bad + 1);
+      setBad(prev => prev + 1);
     };
   };
 
