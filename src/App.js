@@ -22,7 +22,6 @@ function App() {
     if (stateName === 'bad') {
       setBad(bad + 1);
     };
-
   };
 
   const countTotalFeedBack = () => {
@@ -34,8 +33,7 @@ function App() {
     if (total === 0) {
       return 0;
     }
-    const positiveScore = good;
-    const percentage = (100 / total) * positiveScore;
+    const percentage = (100 / total) * good;
     return Math.floor(percentage);
   };
 
@@ -58,7 +56,7 @@ function App() {
             good={good}
             neutral={neutral}
             bad={bad}
-            total={countTotalFeedBack()}
+            total={totalScores}
             positivePercentage={countPositiveFeedbackPercentage(totalScores)}
           />
         }

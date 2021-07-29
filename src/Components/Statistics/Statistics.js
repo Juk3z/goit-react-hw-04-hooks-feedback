@@ -7,11 +7,12 @@ function Statistics({ good, neutral, bad, total, positivePercentage }) {
       <p>Good: {good}</p>
       <p>Neutral: {neutral}</p>
       <p>Bad: {bad}</p>
-      {positivePercentage ? (
+      {positivePercentage
+        ?
         <h3>Positive scores: {positivePercentage}%</h3>
-      ) : (
+        : 
         <h3>Positive scores: no have</h3>
-      )}
+      }
     </>
   );
 };
