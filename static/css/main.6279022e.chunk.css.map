@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/Components/Feedback/styles.module.css"],"names":[],"mappings":"AAAA,mBACE,UAAW,CACX,iBACF","file":"main.6279022e.chunk.css","sourcesContent":[".btn {\n  margin: 5px;\n  border-radius: 5px;\n}\n"]}
